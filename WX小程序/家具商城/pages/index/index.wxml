@@ -1,0 +1,54 @@
+<!--index.wxml-->
+
+<wxs module="filters" src="index.wxs"></wxs><!--filter为保留小数点后两位函数，见wxs文件-->
+
+
+<!--图片滑动浏览,双层花括号对应javascript的配置-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!--商品内容-->
+<view class='content'>
+  <view class='pro'><!--商品，wxfor是循环，双大括号的设置在js脚本里-->
+    <image src='/images/YY]{58BD(FBZMSUX3J35R_C.png' bindtap='gotapBar'></image><!--gotapBar为跳转到底层标签栏tapBar的页面的函数，具体设置在js脚本文件-->
+    <view class='proName'>bilibili</view><!--设置在js脚本的pro里面-->
+    <view class='proPrice'>231.01</view><!--调用wxs的模块函数，保留价钱2位小数-->
+  </view>,
+
+  <view class='pro'><!--商品，wxfor是循环，双大括号的设置在js脚本里-->
+    <image src='/images/YY]{58BD(FBZMSUX3J35R_C.png'   bindtap='gountapBar'></image><!--gountapBar为设置的用来跳转非底层标签栏untapBar页面的函数-->
+    <view class='proName'>b</view><!--设置在js脚本的pro里面-->
+    <view class='proPrice'>3324</view><!--调用wxs的模块函数，保留价钱2位小数-->
+  </view>,
+  
+  <view class='pro' ><!--商品，wxfor是循环，双大括号的设置在js脚本里-->
+    <image src='/images/YY]{58BD(FBZMSUX3J35R_C.png'></image>
+    <view class='proName'>hashhdi</view><!--设置在js脚本的pro里面-->
+    <view class='proPrice'>4234</view><!--调用wxs的模块函数，保留价钱2位小数-->
+  </view>,
+
+  <view class='pro'><!--商品，wxfor是循环，双大括号的设置在js脚本里-->
+    <image src='/images/YY]{58BD(FBZMSUX3J35R_C.png'></image>
+    <view class='proName'>fdgrr</view><!--设置在js脚本的pro里面-->
+    <view class='proPrice'>34145</view><!--调用wxs的模块函数，保留价钱2位小数-->
+  </view>
+</view>
+
+<!--获取用户信息的函数-->
+<!--open-type='getUserInfo'弹出请求获取信息的窗口，该函数为官方封装的-->
+<button type='primary'
+        open-type='getUserInfo' 
+        bindgetuserinfo='handleGetUserInfo'>允许小程序获取你的信息</button>
+
+<!--展示用户信息组件-->
+<open-data type='userNickName'></open-data>
+<!--全局对象-->
+<view>{{age}}</view>
+

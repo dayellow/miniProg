@@ -1,0 +1,28 @@
+/**index.wxss**/
+/*对应wxml的图片滑动浏览*/
+swiper,swiper-item,swiper image{
+  width:100%;
+  height: 400rpx;
+}
+/*对应wxml中的proPrice(价格字符设置)*/
+.proPrice{
+  color: orange;
+}
+/*一个商品单元格式设置*/
+.pro{
+  width:30%;
+  margin-bottom:10rpx;/*上下之间的间隔*/
+}
+/*商品图片格式设置*/
+.pro image{
+  width:100%;
+  height: 200rpx;
+}
+/*整个商品单元格式设置*/
+.content{
+  width:100%;
+  margin-top:20rpx;
+  display: flex;/*商品弹性收缩展示*/
+  flex-wrap: wrap;/*商品排版超出宽度限制就换行*/
+  justify-content: space-around;/*空间调整，使content每个pro单元有一定适应间距*/
+}

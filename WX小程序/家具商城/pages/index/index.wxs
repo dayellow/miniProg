@@ -1,0 +1,11 @@
+
+//模块：保留小数点后两位的函数
+var filters = {
+  toFix: function (val, count) {//过滤器,注意第一行toFix不能和第二行toFixed名字一样，，，val为价钱，count为保留位数
+    return val.toFixed(count);
+  }
+}
+
+module.exports = {//导出
+  toFix: filters.toFix
+}

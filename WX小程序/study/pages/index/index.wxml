@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<!--1.数据绑定-->
+<view>我的年龄：{{age+1}}</view>  <!--{{}}叫做Mustache为data变量，具体逻辑设置在js-->
+<!--2.列表展示：wx:for-->
+<view>id:{{students[0].id}}</view><!--数组-->
+<!--数组遍历，单引号双引号都可以-->
+<view wx:for='{{students}}'>{{item.id}}   {{item.age}}</view>
+<!--3.事件监听改变data-->
+<view>当前计数：{{counter}}</view>  
+<!--bindtap为与触摸绑定该函数，函数不是data所以不用mustache-->
+<button size='mini' bindtap='handleBtnClick'>+</button>

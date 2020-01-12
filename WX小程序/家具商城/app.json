@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/hhh/hhh"
+  ],
+  "window": {
+    "小程序窗口设置,也可以在page页面单独设置，单独设置优先级高于全局设置": "",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFE33B",
+    "navigationBarTitleText": "桃沫儿",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#000000"
+  },
+  
+  "tabBar": {
+    "底层导航栏设置": "",
+    "选择tabBar时文本颜色":"",
+    "selectedColor": "#FFE33B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "选择显示该导航栏的小程序页面": "",
+        "text": "首页",
+        "iconPath": "images/0007020101830082_b.png",
+        "点击前": "",
+        "selectedIconPath": "images/0007020101830082_b.png",
+        "点击后": ""
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/0007020101830082_b.png",
+        "selectedIconPath": "images/0007020101830082_b.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/0007020101830082_b.png",
+        "selectedIconPath": "images/0007020101830082_b.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
